@@ -1,0 +1,25 @@
+{
+  "name": "ts-node-express",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/DylanAlmond/ts-node-express.git",
+  "author": "Dylan Almond <dylan@dylanalmond.net>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.3"
+  }
+}
